@@ -1,0 +1,6 @@
+config BR2_PACKAGE_Clementine
+	bool "clementine"
+	help
+	  clementine is an open source music player 
+
+	  https://github.com/clementine-player/Clementine/wiki/Compiling-from-Source
