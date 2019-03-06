@@ -292,8 +292,8 @@ define QT5BASE_CONFIGURE_CMDS
 		-examplesdir /usr/lib/qt/examples \
 		-no-rpath \
 		-nomake tests \
-		-device buildroot \
-		-device-option CROSS_COMPILE="$(TARGET_CROSS)" \
+		-device linux-rasp-pi3-g++  \
+		-device-option CROSS_COMPILE="$(HOME)"/toolchains/tools/arm-bcm2708/arm-rpi-4.9.3-linux-gnueabihf/bin/arm-linux-gnueabihf- \
 		-device-option BR_COMPILER_CFLAGS="$(TARGET_CFLAGS) $(QT5BASE_EXTRA_CFLAGS)" \
 		-device-option BR_COMPILER_CXXFLAGS="$(TARGET_CXXFLAGS) $(QT5BASE_EXTRA_CFLAGS)" \
 		$(QT5BASE_CONFIGURE_OPTS) \

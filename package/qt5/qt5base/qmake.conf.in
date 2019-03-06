@@ -19,7 +19,7 @@ QMAKE_CXXFLAGS_RELEASE += -O3
 CONFIG                 += nostrip
 
 QMAKE_LIBS             += -lrt -lpthread -ldl
-QMAKE_CFLAGS_ISYSTEM   =
+QMAKE_CFLAGS_ISYSTEM   = 
 
 # Architecture specific configuration
 include(arch.conf)
