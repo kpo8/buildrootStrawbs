@@ -1,6 +1,16 @@
 config BR2_PACKAGE_STRAWBERRY
 	bool "strawberry"
+	depends on BR2_PACKAGE_BOOST
+	depends on BR2_PACKAGE_GETTEXT
+	depends on BR2_PACKAGE_LIBGLIB2
+	depends on BR2_PACKAGE_TAGLIB
+	depends on BR2_PACKAGE_QT5
+	depends on BR2_PACKAGE_PROTOBUF
+	depends on BR2_PACKAGE_SQLITE
+	depends on BR2_PACKAGE_QT5X11EXTRAS
+	depends on BR2_PACKAGE_GSTREAMER1
+	depends on BR2_PACKAGE_OPENSSL
 	help
-	  strawberry is an open source music player 
+	  strawberry is an open source music player
 
 	  https://github.com/jonaski/strawberry
