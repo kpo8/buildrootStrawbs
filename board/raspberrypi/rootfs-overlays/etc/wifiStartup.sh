@@ -26,7 +26,7 @@ else
 		echo "$CHECK"
 
 		if [ "$CHECK" = "Connected" ]; then
-	        	$WIFIWORKS=true;
+	        	WIFIWORKS=true;
 		fi
 	done
 fi

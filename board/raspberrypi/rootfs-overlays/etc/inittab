@@ -29,7 +29,10 @@ null::sysinit:/bin/ln -sf /proc/self/fd/2 /dev/stderr
 
 # Put a getty on the serial port
 console::-/bin/sh  # GENERIC_SERIAL
-tty1::respawn:/bin/sh # HDMI console
+#tty1::respawn:/sbin/getty 115200 tty1 vt100# HDMI console
+
+#highjack boot
+tty1::respawn:/etc/masterBoot.sh 115200 tty1 
 
 # Stuff to do for the 3-finger salute
 #::ctrlaltdel:/sbin/reboot
