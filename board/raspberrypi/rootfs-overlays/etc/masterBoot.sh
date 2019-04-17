@@ -2,6 +2,8 @@
 #
 # startWifi
 /etc/wifiStartup.sh
+#set date
+/etc/setDate.sh
 
 # physical display properties
 export QT_QPA_EGLFS_PHYSICAL_WIDTH=520
