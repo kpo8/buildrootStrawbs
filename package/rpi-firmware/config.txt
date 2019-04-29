@@ -13,6 +13,9 @@ kernel=zImage
 # If the text shown on the screen disappears off the edge, comment this out
 disable_overscan=1
 
+#turn sound card on
+dtparam=audio=on
+
 # How much memory in MB to assign to the GPU on Pi models having
 # 256, 512 or 1024 MB total memory
 gpu_mem_256=100
